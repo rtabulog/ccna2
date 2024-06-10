@@ -1,0 +1,16 @@
+{
+    "aironet": [
+        {
+            "host_ip": "10.12.10.3",
+            "hostname": "12-RenAccessPoint",
+            "username": "admin",
+            "password": "pass",
+            "ssid": "12-ResortsWorld@Channel7",
+            "authentication": "open",
+            "key-man": "wpa",
+            "wifi-pass": "C1sc0123",
+            "channel": "3",
+            "enc-mod": "tkip"
+        }
+    ]
+}
