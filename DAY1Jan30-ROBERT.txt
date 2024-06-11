@@ -130,10 +130,10 @@ Int Fa 0/7
 config t
 ip dhcp pool CAMERA6
 host 10.12.50.6 255.255.255.0
-client-identifier aaaa.bbbb.cccc
+client-identifier 001a.0709.c258
 ip dhcp pool CAMERA8
 host 10.12.50.8 255.255.255.0
-client-identifier cccc.dddd.aaaa
+client-identifier 001a.0704.7f5b
 
 !!cisco unified call manager Express command
 !@@@CUCM-M
