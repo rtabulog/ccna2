@@ -212,8 +212,9 @@ network 10.1.1.0 0.0.0.3 area 12
 OSPF checking:
 sh ip protocols
 sh ip ospf neighbor
-sh ip ospf database
+sh ip ospf databasetrace
 
+R1 - Soulmates
 Task3: Eigrp and Ospf Redistribution:
 R4: sikat: Eigrp and OSPF world:
 config T
@@ -304,7 +305,7 @@ router bgp 45
  network 45.4.5.0 mask 255.255.255.0
 end
 
-TASK4: WHY OSPF AND BGP ARE BEST FRIENDS:
+TASK4: WHY OSPF AND BGP ARE BEST FRIENDS/Soul mates, DESTINY, FORVER:
 OSPF can Inject all BGP routes int ONE ospf route: O*E2
 R1:
 CONFIG t
