@@ -127,6 +127,8 @@ Int Fa 0/7
   switchport access vlan 100    
  end
 
+post to switch - 
+
 config t
 ip dhcp pool CAMERA6
 host 10.12.50.6 255.255.255.0
