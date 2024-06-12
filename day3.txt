@@ -106,12 +106,14 @@ route  add 10.m.0.0 mask 255.255.0.0 10.m.1.4 -p
 How to Create Default Route Cisco/PC/EndDevices:
 p1:
 config T
-ip route 0.0.0.0  0.0.0.0 10.2.1.1
+ip route 0.0.0.0  0.0.0.0 10.2.1.1 1
+ip route 0.0.0.0  0.0.0.0 10.2.1.2 2
 do sh ip route static
 
 p2:
 config T
-ip route 0.0.0.0  0.0.0.0 10.2.1.2
+ip route 0.0.0.0  0.0.0.0 10.2.1.2 1
+ip route 0.0.0.0  0.0.0.0 10.2.1.1 2
 do sh ip route static
 
 D1:
