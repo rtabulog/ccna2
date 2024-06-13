@@ -5,12 +5,12 @@ TASK1: Cisco Security Fundamentals.
 cmd
 ping 10.k.1.10
 
-c>nmap -sP 10.k.1.0/24    c>nmap -sP 10.k.100.0/24
+c>nmap -sP 10.11.1.0/24    c>nmap -sP 10.11.100.0/24
 10.m.1.10?                   10.m.100.8
 TASK2: How to begin hacking Layer 3:
 HOw get all the IP address of your victim:
 
-nmap -v 10.k.1.10        nmap -v 10.k.100.8
+nmap -v 10.11.1.10        nmap -v 10.11.100.8
 is 139/445/21 open?          is 23,53,2000 open ?
 
 how to attack 139/445? because you DONT have a firewall!
@@ -50,24 +50,32 @@ DENY 104.21.0.0 0.0.255.255
 DENY 68.235.0.0 0.0.255.255
 DENY 104.17.0.0 0.0.255.255
 DENY 88.208.0.0 0.0.255.255
+DENY 172.67.0.0 0.0.255.255
+DENY 208.122.0.0 0.0.255.255
 Permit Any
 Int Gi 0/0/1
  ip access-group NOPORN1 in
  end
+conf t
+ip domain-lookup
+ip name-server 8.8.8.8
 
 TASK2: USE STANDARD ACCESS-LIST TO BLOCK OTHER CONTRIES/CLASSMATE:
 config t
-NO ip access-list standard NOCOL1
-ip access-list standard NOCOL1
+NO ip access-list standard KAMI1
+ip access-list standard KAMI
 DENY 10.11.0.0 0.0.255.255
 DENY 10.21.0.0 0.0.255.255
 DENY 10.31.0.0 0.0.255.255
 DENY 10.41.0.0 0.0.255.255
 DENY 10.51.0.0 0.0.255.255
 DENY 10.61.0.0 0.0.255.255
+DENY 10.71.0.0 0.0.255.255
+DENY 10.81.0.0 0.0.255.255
+DENY 10.91.0.0 0.0.255.255
 Permit Any
 Int Gi 0/0/1
- ip access-group NOCOL1 in
+ ip access-group KAMI1 in
  end
 
 TASK3: When you become a Security Analyst:
