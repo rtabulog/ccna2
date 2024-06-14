@@ -88,13 +88,13 @@ TASK3: EXPENSIVE SWITCH/MANAGEABLE SWITCH:\ = 20k
 1. mac address learning": sh mac address-table
 2  mac address filtering
 3  mac address forwaring
-4  Php: loop avoidance
+4  Php: loop avoidance (I love this)
 5. $$: Vlan Feature $$ = 60k up
 
 COREbaba12#sh mac address-table
 
 TASK4: Mastering the Switch BUttons:
-Mode Button: jailBreak/Password Forget
+Mode Button: jailBreak/Password Forget/Factory Reset
 Poweroff, Press Mode, until
 Switch:  flash_init
 	 delete flash:config.text
@@ -103,7 +103,7 @@ Switch:  flash_init
 
 TASK5: HOW TO SPOT A VERY HEALTHY SWITCH?
 super healthy: "all flashing green."
-amber/orange: needs help.
+amber/orange: needs help. you are protected.
 
 create vlans,
 transfer ports to vlans
@@ -126,7 +126,7 @@ NO spanning-tree vlan 1-999
 end
 @taas:
 config t
-spanning-tree vlan 1
+spanning-tree vlan 1-999
 end
 
 TASK7: HOW TO BECOME A WORLD-CLASS NETWORK ENGINEER
